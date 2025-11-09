@@ -1,0 +1,71 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  color: #333;
+  background-image: url('images/crystals-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 0.5rem;
+}
+
+main img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: #4c9eef;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+/* Pseudo Class Example */
+a:link {
+  color: rgb(2, 2, 36);
+}
+
+a:visited {
+  color: #800080;
+}
