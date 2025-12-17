@@ -3,7 +3,6 @@ body {
   margin: 0;
 }
 
-/* Header */
 header {
   background-color: #275218;
   color: #fff;
@@ -39,7 +38,6 @@ header > nav > a:hover {
   border: 1px solid #fff;
 }
 
-/* Main */
 main {
   background-color: #ebebeb;
   padding: 1rem;
@@ -83,7 +81,6 @@ article > footer span {
   font-size: 1.25rem;
 }
 
-/* Page Footer */
 body > footer {
   background-color: #52e6a6;
   color: #fff;
