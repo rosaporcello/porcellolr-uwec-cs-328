@@ -37,7 +37,7 @@ nav > a:hover {
   left: -51%;
   height: 50rem;
   z-index: -1;
-  background-image: url('lab08/images/animal.jpg');
+  background-image: url('lab08/images/animal.jpg');/*delete the lab08/*/
   background-size: cover;
 }
 
@@ -56,13 +56,13 @@ section {
   background-color: transparent;
 }
 .sloth > h2 {
-  background-image: url('lab08/images/sloth.jpg');
+  background-image: url('lab08/images/sloth.jpg');/*delete the lab08/*/
 }
 .elephant > h2 {
-  background-image: url('lab08/images/elephant.jpg');
+  background-image: url('lab08/images/elephant.jpg');/*delete the lab08/*/
 }
 .owl > h2 {
-  background-image: url('lab08/images/owl.jpg');
+  background-image: url('lab08/images/owl.jpg');/*delete the lab08/*/
 }
 
 article {
