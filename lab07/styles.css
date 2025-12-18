@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-image: url('images/lab7-backgroundimage.jpg');
+  background-image: url('images/lab7-backgroundimage.png');/*This images is missing from your images folder*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,7 +53,7 @@ main img {
 }
 
 .about-me h2 {
-  background-image: url('images/lab7-me.jpg');
+  background-image: url('images/lab7-me.jpg');/*This image is missing from your images folder*/
   background-size: cover;
   padding: 10rem 0 10rem 4rem;
   text-shadow: 2px 2px 2px #0000008f;
