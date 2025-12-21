@@ -1,0 +1,185 @@
+
+:root {
+  --bg: #09021d;
+  --accent: #d15f44;
+  --mars-dark: #913a25;
+  --mars-top: #d15f44;
+  --white: #fff;
+}
+
+* { box-sizing: border-box; }
+html,body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Roboto Mono', monospace;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+img { max-width: 100%; display:block; }
+
+header {
+  background: linear-gradient(180deg, rgba(9,2,29,1) 0%, rgba(9,2,29,0) 100%);
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  z-index: 3;
+}
+nav { display:flex; gap: 1rem; align-items:center; }
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+header a:hover { color: var(--accent); }
+
+.headline {
+  position: relative;
+  width: calc(100vw - 1rem);
+  height: 80vh;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 4rem; 
+}
+
+
+.rover {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  display: block;
+  bottom: 10.5rem;
+  left: 10%;
+  z-index: 1; 
+  transform-origin: center bottom;
+  transition: transform 0.2s ease;
+}
+
+
+.rover img { width:100%; height:auto; display:block; }
+
+.rover::after {
+ 
+  content: url'lab 16/images/dish.svg';
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 2.25rem;
+  top: 1.6rem;
+  z-index: 1;
+  transform-origin: center bottom;
+  animation: rotate 2s linear infinite alternate;
+}
+
+@keyframes roverMove {
+  from {
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+  to {
+    transform: translateX(40vw) translateY(-6vh) rotate(4deg) scale(1.02);
+  }
+}
+.rover {
+  animation: roverMove 12s ease-in-out 0s infinite alternate;
+}
+.rover:hover { animation-play-state: paused; }
+
+.planet {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  animation: rise 10s ease-in 1 forwards;
+}
+@keyframes rise {
+  from {
+    bottom: 0;
+    transform: rotate(0) scale(1);
+  }
+  to {
+    bottom: 75%;
+    transform: rotate(180deg) scale(2);
+  }
+}
+
+.mars {
+  position: absolute;
+  width: 100%;
+  height: 10.5rem;
+  background-color: var(--mars-dark);
+  border-top: 1rem solid var(--mars-top);
+  bottom: 0;
+  z-index: 2;
+}
+.mars h1 {
+  margin-left: 5rem;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+
+section { padding: 1rem; }
+h2 { color: var(--accent); margin-top: 5rem; }
+h3 { margin: 1rem 0; }
+
+.robots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.robots figure { justify-self: center; margin:0; }
+.robots figcaption { margin-top: .5rem; }
+
+iframe {
+  display:block;
+  margin: 1rem auto 3rem;
+  max-width: 100%;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+.grid hr { grid-area: 1/2/10/3; writing-mode: vertical-lr; border: none; border-left: 2px solid #444; height:100%; margin: 0 auto; }
+
+
+.grid p { margin: 1rem; }
+.grid h3 { margin: 1rem; justify-self: right; }
+
+.maps { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+
+
+figcaption, h3 { transition: color .2s ease-in-out; }
+figcaption:hover, h3:hover { color: var(--accent); }
+
+header { z-index: 3; }
+.mars { z-index: 2; }
+
+@media (min-width: 600px) {
+  section { padding: 1rem 5rem; }
+}
+
+
+{
+  position: absolute;
+  width: 8rem;
+  left: 80%;
+  top: 10%;
+  animation: floaty 6s ease-in-out 0s infinite alternate;
+}
+@keyframes floaty {
+  from { transform: translateY(0) rotate(0deg) scale(1); }
+  to   { transform: translateY(-20vh) rotate(15deg) scale(1.15); }
+}
+@media (max-width: 480px) {
+  nav { gap: .5rem; flex-wrap:wrap; }
+  .mars h1 { font-size: 2rem; margin-left: 1rem; }
+}
