@@ -1,0 +1,46 @@
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: .25rem solid #9a82e8;
+}
+
+header img {
+    width: 5rem;
+    display: block;
+}
+
+nav > a {
+    color: #9a82e8;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    margin: .5rem;
+    transition: all .2s ease-in-out;
+}
+
+nav > a:hover {
+    color: #3b325a;
+    border-bottom-color: #3b325a;
+}
+
+section {
+    pad
+}
