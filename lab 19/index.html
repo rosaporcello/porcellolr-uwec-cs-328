@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eiger</title>
+    <link rel="stylesheet" href="lab 19/styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+    <div class="overlay toggle-nav"></div>
+
+    <header>
+        <div class="hamburger" onclick="toggleNav()">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+
+        <nav class="toggle-nav">
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#routes">Climb</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <h1>Eiger</h1>
+
+        <div class="social">
+            <a href="https://fb.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.pinterest.com/">
+                <img src="images/pinterest.svg" alt="Pinterest">
+            </a>
+        </div>
+    </header>
+
+    <main>
+   
+        <section class="call-to-action">
+            <h2>The Eiger</h2>
+            <a href="#contact" class="button">Explore the Mountains</a>
+        </section>
+
+        <section class="mountains" id="about">
+            <h3>The Mountain</h3>
+            <p>
+                Because of its famous north face, the Eiger is one of the most famous and written about peaks in the world. The battle to climb this face has captivated the interest of climbers and non-climbers alike since the time of the first note worthy attempt in 1934. The Eiger is a striking peak from all sides and a worthy climb by any of its many routes, none of which are particularly easy. The easiest way to the summit is via the West Flank & West Ridge, which is a very complex route of about the same level of difficulty as the Hernli Arate on the Matterhorn with rock pitches up to III and ice to 40 degrees. Charles Barrington with Christian Almer and Peter Bohren made the first ascent of the Eiger via the West Flank & West Ridge on 11 August 1858.
+            </p>
+
+            <p>
+                The Eiger is located in the Jungfrau Region of the Berner Oberland. It is normally reached from Interlaken via either Grindelwald or Lauterbrunnen. The starting points of all the routes can be reached by train from either of these towns. A mountain railway goes to Kleine Scheidegg via Alpiglen from Grindlewald and via Wengen from Lauterbrunnen. The famous Jungfrau Railway which accesses Eiger Glacier & Eismeer Stations and the Jungfraujoch starts at Kleine Scheidegg.
+            </p>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h3>Gallery</h3>
+
+            <div>
+                <img src="lab 19/images/gallery/alpine-panorama.jpg" class="panorama" alt="">
+                <img src="lab 19/images/gallery/alpine2.jpg" alt="">
+                <img src="lab 19/images/gallery/eiger2.jpg" alt="">
+                <img src="lab 19/images/gallery/gorge-rock.jpg" alt="">
+                <img src="lab 19/images/gallery/panoramic.jpg" alt="">
+                <img src="lab 19/images/gallery/sunrise.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="routes" id="routes">
+            <h3>The Routes</h3>
+
+            <div>
+                <img src="lab 19/images/alpine.jpg" alt="">
+                <h4>West Flank & West Ridge</h4>
+                <h5>AD (G4) with III-, 1650m. 6 hours ascent.</h5>
+                <p>
+                    The West Flank & West Ridge is the easiest route to the summit and the usual descent route for most parties. Route finding on the lower part of the flank can be very difficult, especially in descent if one has not gone up this way initially. Though not that technically difficult it is a big high alpine tour that can be especially serious in poor weather or conditions. Recommended equipment is an ice axe, crampons, 2 ice screws, 2 pitons (or nuts / cams) and 4 to 5 carabiners. There are fixed iron rods on the upper part of the route. Charles Barrington with Christian Almer and Peter Bohren, , made the first ascent of the West Flank & West Ridge on 11 August 1858 (also the first ascent of the peak).
+                </p>
+                <a class="button" href="https://climbingthesevensummits.com/personal-sherpa-climb/">Climb It</a>
+            </div>
+
+            <div>
+                <img src="lab 19/images/eiger.jpg" alt="">
+                <h4>North Face</h4>
+                <h5>1938 Route: ED2 (G14) V-, A0, 60°, 1800m.</h5>
+                <p>
+                    Since the first ascent of the face in 1938 there have been numerous new routes and variations on the face including many that end on the West Ridge or NE Face and even several Sport Climbing routes low on the face (Eiger NF routes). Still, most climbers seem to be most familiar with and aspire to the original classic 1938 route. But, note that in recent years much of the snow and the ice has melted back so that late in the season the face is often almost bare.
+                </p>
+                <a class="button" href="https://climbingthesevensummits.com/personal-sherpa-climb/">Climb It</a>
+            </div>
+
+            <div>
+                <img src="lab 19/images/jungfraujoch.jpg" alt="">
+                <h4>Mittellegi Ridge</h4>
+                <h5>D (G5) with IV & fixed ropes.</h5>
+                <p>
+                    The Mittellegi Ridge is probably the most popular route on the Eiger. It is a fantastic steep knife edged ridge offering excellent climbing with little or no objective danger. Yuko Maki with Fritz Amatter, Samuel Brawand and Fritz Steuri made the first ascent of the Mittellegi Ridge on 10 September 1921.
+                </p>
+                <a class="button" href="https://climbingthesevensummits.com/personal-sherpa-climb/">Climb It</a>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <form>
+                <h3>Contact</h3>
+
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <textarea id="message">Type message here...</textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <span>
+            Copyright <script>document.write(new Date().getFullYear());</script>
+        </span>
+
+        <div class="social">
+            <a href="https://fb.com"><img src="lab 19/images/facebook.svg"></a>
+            <a href="https://www.instagram.com/"><img src="lab 19/images/instagram.svg"></a>
+            <a href="https://www.pinterest.com/"><img src="lab 19/images/pinterest.svg"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
