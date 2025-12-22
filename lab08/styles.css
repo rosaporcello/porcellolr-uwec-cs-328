@@ -5,7 +5,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Header */
 header {
   background-color: rgba(39, 33, 60, 0.7);
   display: flex;
@@ -17,7 +16,6 @@ header {
   z-index: 1;
 }
 
-/* Navigation */
 nav > a {
   color: #e2512d;
   text-decoration: none;
@@ -37,7 +35,7 @@ nav > a:hover {
   left: -51%;
   height: 50rem;
   z-index: -1;
-  background-image: url('lab08/images/animal.jpg');/*delete the lab08/*/
+  background-image: url('images/animal.jpg');
   background-size: cover;
 }
 
@@ -56,13 +54,13 @@ section {
   background-color: transparent;
 }
 .sloth > h2 {
-  background-image: url('lab08/images/sloth.jpg');/*delete the lab08/*/
+  background-image: url('images/sloth.jpg');
 }
 .elephant > h2 {
-  background-image: url('lab08/images/elephant.jpg');/*delete the lab08/*/
+  background-image: url('images/elephant.jpg');
 }
 .owl > h2 {
-  background-image: url('lab08/images/owl.jpg');/*delete the lab08/*/
+  background-image: url('images/owl.jpg');
 }
 
 article {
