@@ -1,21 +1,24 @@
+/* lab8/styles.css */
 body {
-  background-color: #27213C;
   margin: 0;
+  background-color: #27213C;
   color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header */
 header {
-  background-color: rgba(39, 33, 60, 0.7);
+  background-color: rgba(39, 33, 60, .70);
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
+  align-items: center; /* adjust if your screenshot needs flex-start or flex-end */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
 }
 
+/* Nav links */
 nav > a {
   color: #e2512d;
   text-decoration: none;
@@ -23,10 +26,12 @@ nav > a {
   font-weight: 900;
   display: inline-block;
 }
+
 nav > a:hover {
   color: #A33B20;
   text-decoration: underline;
 }
+
 
 .animal-background {
   position: fixed;
@@ -35,8 +40,18 @@ nav > a:hover {
   left: -51%;
   height: 50rem;
   z-index: -1;
-  background-image: url('images/animal.jpg');
+
+  background-image: url("images/animal.jpg");
   background-size: cover;
+}
+
+/* Sections */
+section {
+  background-color: #A33B20;
+}
+
+.animals {
+  background-color: transparent;
 }
 
 section > h2 {
@@ -46,34 +61,27 @@ section > h2 {
   background-size: cover;
   margin: 0;
   border-bottom: 2rem solid #e2512d;
+  position: relative; 
 }
-section {
-  background-color: #A33B20;
-}
-.animals {
-  background-color: transparent;
-}
-.sloth > h2 {
-  background-image: url('images/sloth.jpg');
-}
-.elephant > h2 {
-  background-image: url('images/elephant.jpg');
-}
-.owl > h2 {
-  background-image: url('images/owl.jpg');
+
+.sloth > h2 { background-image: url("images/sloth.jpg"); }
+.elephant > h2 { background-image: url("images/elephant.jpg"); }
+.owl > h2 { background-image: url("images/owl.jpg"); }
+
+
+.accordion {
+  cursor: pointer;
 }
 
 article {
   padding: 1rem;
   display: none;
 }
+
 article.show {
   display: block;
 }
 
-section > h2 {
-  position: relative;
-}
 section span {
   position: absolute;
   top: 15rem;
@@ -81,12 +89,9 @@ section span {
   left: calc(50% - 11px);
   transform: rotate(180deg);
 }
+
 span.rotate {
   transform: rotate(0);
-}
-
-.accordion {
-  cursor: pointer;
 }
 
 .sidelink {
@@ -94,33 +99,40 @@ span.rotate {
   color: #fff;
   padding: 1rem 2rem;
   text-decoration: none;
+
   position: fixed;
   transform: rotate(90deg);
   z-index: 1;
+
   top: 40%;
-  right: -3rem;
+  right: -4rem;
 }
 
+/* Desktop */
 @media (min-width: 1000px) {
   .animal-background {
     height: 100rem;
     top: -25%;
   }
+
   section > h2 {
     padding: 23rem 0;
     font-size: 3rem;
     background-position: center;
   }
+
   section span {
     font-size: 4rem;
     top: 26rem;
     left: calc(50% - 22px);
   }
+
   nav {
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 1rem;   
+    left: 1rem;  
   }
+
   article {
     max-width: 60rem;
     margin: 0 auto;
