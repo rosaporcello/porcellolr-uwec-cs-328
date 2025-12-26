@@ -1,56 +1,89 @@
 body {
-background-color: #330202;
-color: #fff;
-font-family: 'EB Garamond', serif;
-margin: 0;
+  background-color: #330202;
+  color: #fff;
+  font-family: "EB Garamond", serif;
+  margin: 0;
+  line-height: 1.6;
 }
 
-h1, h2 {
-font-family: 'Cinzel Decorative', cursive;
-color: #d9ba6c;
+h1,
+h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #d9ba6c;
+  margin: 0.25rem 0;
 }
 
 header {
-background-color: #161d2d;
-padding: 1rem;
+  background-color: #161d2d;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 nav > a {
-color: #d9ba6c;
-border: 1px solid #d9ba6c;
-text-decoration: none;
-padding: 1rem;
-font-weight: 800;
-display: inline-block;
-margin: 1rem 1rem 1rem 0;
+  color: #d9ba6c;
+  border: 1px solid #d9ba6c;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  font-weight: 800;
+  display: inline-block;
+  margin: 0.5rem 1rem 0.5rem 0;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 nav > a:hover {
-border-color: transparent;
-background-color: #d9ba6c;
-color: #161d2d;
+  border-color: transparent;
+  background-color: #d9ba6c;
+  color: #161d2d;
 }
 
 .sidenav {
-background-color: #374a76;
-padding: .5rem 1rem;
+  background-color: #374a76;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 5.5rem; 
+  z-index: 4;
 }
 
 .sidenav > a {
-background-color: #fae2c0;
-color: #0f0f0f;
-padding: .5rem 1rem;
-display: inline-block;
-margin: .5rem .5rem 0 0;
-text-decoration: none;
+  background-color: #fae2c0;
+  color: #0f0f0f;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
-
 .sidenav > a:hover {
-opacity: .8;
+  opacity: 0.8;
 }
 
 main {
-padding: 1rem;
+  padding: 1rem;
+  max-width: 70ch;
 }
-/*Unfinished
+
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  header {
+    grid-column: 1 / -1;
+  }
+
+  .sidenav {
+    position: sticky;
+    top: 5.5rem;
+    height: fit-content;
+    align-self: start;
+  }
+
+  main {
+    padding: 2rem;
+  }
+}
