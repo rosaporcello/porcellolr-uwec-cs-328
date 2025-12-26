@@ -6,175 +6,172 @@
   <title>Mars Rovers</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700;900&display=swap" rel="stylesheet">
-
-
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="stars.css">
 </head>
+
 <body>
+  <header>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#robots">Robots</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#maps">Maps</a>
+    </nav>
+  </header>
 
-<header>
-  <nav>
-    <a href="#overview">Overview</a>
-    <a href="#robots">Robots</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#maps">Maps</a>
-  </nav>
-</header>
+  <main>
+    <section class="headline">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
 
-<main>
+      <div class="rover">
+        <img src="images/rover.svg" alt="Rover">
+      </div>
 
-  <section class="headline">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
+      <img class="planet" src="images/planet.svg" alt="Planet">
 
-    <div class="rover">
-      <img src="images/rover.svg" alt="Rover">
-    </div>
+      <div class="mars">
+        <h1>The Mars Rovers</h1>
+      </div>
+    </section>
 
-    <img class="planet" src="images/planet.svg" alt="Planet">
-
-    <div class="mars">
-      <h1>The Mars Rovers</h1>
-    </div>
-
-    <img class="mars rover" src="images/mars rover.jpg" alt="Animated mars rover ">
-  </section>
-
-
-  <section>
-
-    <h2 id="overview">Mars Rover</h2>
-    <hr>
-
-    <p>
-      A Mars rover is a motor vehicle designed to travel on the surface of Mars. Rovers
-      have several advantages over stationary landers: they examine more territory, can be
-      directed to interesting features, and can position themselves optimally for sunlight.
-    </p>
-
-    <h3>Science</h3>
-    <p>
-      Mars rover science focuses on evidence of past water activity. Rocks, minerals,
-      and geologic landforms hold clues about ancient water processes.
-    </p>
-
-    <h2 id="robots">The Robots</h2>
-    <hr>
-
-    <div class="robots">
-      <figure>
-        <img src="images/mars2020-2.png" alt="Mars 2020 Rover">
-        <figcaption>Mars 2020</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/msl-2.png" alt="Curiosity Rover">
-        <figcaption>Curiosity Rover</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/marshelicopter-2.png" alt="Mars Helicopter">
-        <figcaption>Helicopter Tech Demo</figcaption>
-      </figure>
-    </div>
-
-    <hr>
-
-    <h3>Rover Parts</h3>
-    <iframe src="https://mars.nasa.gov/gltf_embed/24584" width="800px" height="450px" frameborder="0"></iframe>
-    <div class="grid">
+    <section>
+      <h2 id="overview">Mars Rover</h2>
       <hr>
-      <div>
-        <h3>Body</h3>
-        <p>a structure that protects the rovers' vital organs</p>
 
-        <h3>Brain</h3>
-        <p>computers to process information</p>
+      <p>
+        A Mars rover is a motor vehicle designed to travel on the surface of Mars. Rovers
+        have several advantages over stationary landers: they examine more territory, can be
+        directed to interesting features, and can position themselves optimally for sunlight.
+      </p>
 
-        <h3>Temperature Controls</h3>
-        <p>internal heaters and insulation layers</p>
+      <h3>Science</h3>
+      <p>
+        Mars rover science focuses on evidence of past water activity. Rocks, minerals,
+        and geologic landforms hold clues about ancient water processes.
+      </p>
 
-        <h3>Neck and Head</h3>
-        <p>camera mast providing a human-scale view</p>
-
-        <h3>Eyes and Senses</h3>
-        <p>cameras and instruments for environmental analysis</p>
-      </div>
-
-      <div></div>
-
-      <div>
-        <h3>Arm</h3>
-        <p>lets the rover extend tools outward</p>
-
-        <h3>Wheels and Legs</h3>
-        <p>mobility systems</p>
-
-        <h3>Energy</h3>
-        <p>batteries and solar panels</p>
-
-        <h3>Communications</h3>
-        <p>antennas for sending and receiving signals</p>
-      </div>
-    </div>
-
-    <h2 id="timeline">Mission Timeline</h2>
-    <hr>
-
-    <div class="grid">
+      <h2 id="robots">The Robots</h2>
       <hr>
-      <div>
-        <h3>Prelaunch Activities</h3>
-        <p>Testing and site selection</p>
 
-        <h3>Launch</h3>
-        <p>Liftoff from Earth</p>
+      <div class="robots">
+        <figure>
+          <img src="images/mars2020-2.png" alt="Mars 2020 Rover">
+          <figcaption>Mars 2020</figcaption>
+        </figure>
 
-        <h3>Cruise</h3>
-        <p>Travel through space</p>
+        <figure>
+          <img src="images/msl-2.png" alt="Curiosity Rover">
+          <figcaption>Curiosity Rover</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/marshelicopter-2.png" alt="Mars Helicopter">
+          <figcaption>Helicopter Tech Demo</figcaption>
+        </figure>
       </div>
 
-      <div></div>
+      <hr>
 
-      <div>
-        <h3>Approach</h3>
-        <p>Near Mars orbit</p>
+      <h3>Rover Parts</h3>
+      <iframe
+        src="https://mars.nasa.gov/gltf_embed/24584"
+        width="800"
+        height="450"
+        frameborder="0"
+        title="3D Mars rover model">
+      </iframe>
 
-        <h3>Entry, Descent, Landing</h3>
-        <p>Atmospheric descent to the surface</p>
+      <div class="grid">
+        <hr>
+        <div>
+          <h3>Body</h3>
+          <p>a structure that protects the rovers' vital organs</p>
 
-        <h3>Rover Egress</h3>
-        <p>Leaving the lander</p>
+          <h3>Brain</h3>
+          <p>computers to process information</p>
 
-        <h3>Surface Operations</h3>
-        <p>Daily rover activities</p>
+          <h3>Temperature Controls</h3>
+          <p>internal heaters and insulation layers</p>
+
+          <h3>Neck and Head</h3>
+          <p>camera mast providing a human-scale view</p>
+
+          <h3>Eyes and Senses</h3>
+          <p>cameras and instruments for environmental analysis</p>
+        </div>
+
+        <div></div>
+
+        <div>
+          <h3>Arm</h3>
+          <p>lets the rover extend tools outward</p>
+
+          <h3>Wheels and Legs</h3>
+          <p>mobility systems</p>
+
+          <h3>Energy</h3>
+          <p>batteries and solar panels</p>
+
+          <h3>Communications</h3>
+          <p>antennas for sending and receiving signals</p>
+        </div>
       </div>
-    </div>
 
-    <h2 id="maps">Maps</h2>
-    <hr>
+      <h2 id="timeline">Mission Timeline</h2>
+      <hr>
 
-    <div class="maps">
-      <figure>
-        <img src="images/mera-sol2555.jpeg" alt="Spirit Map">
-        <figcaption>Spirit's Journey</figcaption>
-      </figure>
+      <div class="grid">
+        <hr>
+        <div>
+          <h3>Prelaunch Activities</h3>
+          <p>Testing and site selection</p>
 
-      <figure>
-        <img src="images/merb-sol4836.jpeg" alt="Opportunity Map">
-        <figcaption>Opportunity's Journey</figcaption>
-      </figure>
-    </div>
+          <h3>Launch</h3>
+          <p>Liftoff from Earth</p>
 
-  </section>
+          <h3>Cruise</h3>
+          <p>Travel through space</p>
+        </div>
 
-</main>
+        <div></div>
 
-<footer>
-  <p style="text-align:center; padding:1rem; color:#777;">Lab 16  Mars Rovers</p>
-</footer>
+        <div>
+          <h3>Approach</h3>
+          <p>Near Mars orbit</p>
 
+          <h3>Entry, Descent, Landing</h3>
+          <p>Atmospheric descent to the surface</p>
+
+          <h3>Rover Egress</h3>
+          <p>Leaving the lander</p>
+
+          <h3>Surface Operations</h3>
+          <p>Daily rover activities</p>
+        </div>
+      </div>
+
+      <h2 id="maps">Maps</h2>
+      <hr>
+
+      <div class="maps">
+        <figure>
+          <img src="images/mera-sol2555.jpeg" alt="Map showing Spirit rover's journey">
+          <figcaption>Spirit's Journey</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/merb-sol4836.jpeg" alt="Map showing Opportunity rover's journey">
+          <figcaption>Opportunity's Journey</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:1rem; color:#777;">Lab 16 Mars Rovers</p>
+  </footer>
 </body>
 </html>
